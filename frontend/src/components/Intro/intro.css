@@ -1,0 +1,78 @@
+#intro{
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.bg{
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.introContent{
+  height: 55vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello{
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.myName{
+  color: yellow;
+}
+
+.introParagraph{
+  font-size: large;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.hireMeBtn{
+  background: white;
+  margin: 1rem 0;
+  padding: 0.50rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hireMe{
+  padding-left: 0.5rem;
+  padding-top: 0.33rem;
+}
+
+.hireMeIcon{
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:480px) {
+
+  .bg{
+    right: -10vw;
+    height: 50vh;
+  }
+  .introContent{
+    font-size: 10vw;
+  }
+
+  .hello{
+    font-size: 4.5vw;
+  }
+}
