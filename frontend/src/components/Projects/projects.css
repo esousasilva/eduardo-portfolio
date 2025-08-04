@@ -22,11 +22,46 @@
 }
 
 .projectDescription{
-  font-weight: 300;
+  font-weight: 200;
   font-size: 1rem;
   padding-bottom: 1rem;
+  text-align: justify;
+  padding-bottom: 2rem;
+
+  max-width: 47rem;
+  margin: 0 auto;
+  display: block;  
 }
 
 .projectBox{
   padding-bottom: 4rem;
+}
+
+.link{
+  color: yellow;
+}
+
+.bilimetrixPhoto{
+  width: 45rem;
+}
+
+.capstonePhoto{
+  width: 35rem;
+}
+
+@media screen and (max-width:480px){
+  .capstonePhoto{
+    width: 20rem;
+    height: auto;
+  }
+
+  .bilimetrixPhoto{
+    width: 25rem;
+  }
+
+  .projectTitle{
+    font-size: 1.5rem;
+  }
+
+
 }
