@@ -27,6 +27,17 @@
   justify-content: center;
 }
 
+.buttonsIntro{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.hireMeBtn:hover{
+  cursor: pointer;
+  background: yellow;
+}
+
 .hello{
   font-size: 1.75rem;
   font-weight: 100;
@@ -70,6 +81,7 @@
   }
   .introContent{
     font-size: 10vw;
+    height: 70vh;
   }
 
   .hello{

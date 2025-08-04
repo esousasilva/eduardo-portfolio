@@ -2,6 +2,7 @@ import React from 'react';
 import './intro.css';
 import bg from '../../assets/eduardo.png';
 import { MdWork } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 
 export const Intro = () => {
@@ -10,8 +11,11 @@ export const Intro = () => {
       <div className="introContent">
         <span className='hello'>Hello,</span>
         <span className='introText'>I'm <span className='myName'>Eduardo</span> <br/> Software Engineer  </span>
-        <p className='introParagraph'>I am a skilled software engineer with experience in creating websites.</p>
-        <Link><button className='hireMeBtn'> <MdWork className='hireMeIcon'></MdWork><span className='hireMe'>Hire Me</span></button></Link>
+        <p className='introParagraph'>Crafting modern web solutions with clean code, intuitive design,<br/> and a passion for technology.</p>
+        <span className='buttonsIntro'>
+          <Link><button className='hireMeBtn' onClick={() => window.open('/Eduardo_s_resume.pdf', '_blank')}> <MdWork className='hireMeIcon'></MdWork><span className='hireMe'>Resume</span></button></Link>
+          <Link><button className='hireMeBtn' onClick={() => window.open("https://www.linkedin.com/in/esousasilva/", '_blank')}> <FaLinkedin className='hireMeIcon'></FaLinkedin><span className='hireMe'>LinkedIn</span></button></Link>
+        </span>
       </div>
       <img src={bg} alt='' className="bg" />
     </section>
