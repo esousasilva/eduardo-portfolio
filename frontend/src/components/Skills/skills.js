@@ -7,8 +7,12 @@ import { FaReact } from "react-icons/fa";
 export const Skills = () => {
   return (
     <section id='skills'>
-      <span className='skillTitle'>What I do</span>
-      <span className='skillDescription'>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</span>
+      <span className='skillTitle'>About Me</span>
+      <span className='skillDescription'>I am a Software Engineer with a strong foundation in full-stack development, cloud deployment, and modern software architecture. Originally from Brazil, I began my journey in technology with a background in Medical Physics, later transitioning into software engineering to pursue my passion for building scalable, user-centered solutions.
+
+After teaching myself English, I relocated to the United States and earned a Master of Science in Computer Science with a specialization in Software Engineering from Seattle University. This experience sharpened both my technical and problem-solving skills, and deepened my commitment to continuous learning and innovation.
+
+I have since developed and deployed web and mobile applications using technologies such as React, Node.js, Flutter, Firebase, Docker, and Google Cloud. I bring a user-first mindset, a collaborative work ethic, and a strong ability to adapt quickly in fast-paced environments. I’m particularly interested in roles that allow me to contribute to impactful products and grow as an engineer alongside a motivated and mission-driven team.</span>
       <div className='skillBars'>
         <div className='skillBar'>
           <FaPython className='skillBarLogo'/>
