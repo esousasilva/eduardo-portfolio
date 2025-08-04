@@ -99,7 +99,7 @@ export const Projects = () => {
         <h1 className='projectTitle'>Excision Trading Card Website</h1>
         <span className='projectDescription'>This project involved designing and developing a dynamic website using ASP.NET and C# for the back-end, as part of a class assignment focused on full-stack web development. The site showcases server-side rendering, form handling, and data-driven functionality. Throughout development, GitHub was used for version control, enabling organized code management, collaboration, and iterative feature integration in a team environment.</span>
         <div className='projectsImgs'>
-          <PhotoCarousel className="carousel" images={imgExcision} size={"50%"}/>
+          <img src={excision1} alt='Excision Website Running Locally' className='bilimetrixPhoto'/>
         </div>
       </span>
 
