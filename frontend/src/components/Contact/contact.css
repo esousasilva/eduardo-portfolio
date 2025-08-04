@@ -9,6 +9,23 @@
   justify-content: center;
 }
 
+.formSentMessage{
+  height: 100%;
+  padding-top: 5vh;
+  padding-bottom: 27.4vh;
+}
+
+.thankUMessage{
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.checkMark{
+  font-size: 3rem;
+  margin-bottom: 3vh;
+  color: rgb(5, 221, 5);
+}
+
 .contactTitle{
   margin: 1rem 0;
   font-size: 3rem;
