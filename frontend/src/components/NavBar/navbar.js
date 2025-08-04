@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import './navbar.css';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/edu-logo.png'
 import { FaRegMessage } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 import { RiMenu3Fill } from "react-icons/ri";
