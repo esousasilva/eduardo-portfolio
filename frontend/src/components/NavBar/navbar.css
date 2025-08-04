@@ -13,6 +13,10 @@
   z-index: 3;
 }
 
+.active{
+  color: yellow;
+}
+
 .logo{
   object-fit: cover;
   height: 3rem;
@@ -24,6 +28,50 @@
   margin: 1rem;
   cursor: pointer;
 }
+
+.mobileMenu{
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.mobileMenuIcon{
+  display: none;
+  object-fit: cover;
+  font-size: 2.5rem;
+  color: yellow;
+}
+
+@media screen and (max-width: 720px){
+  .mobileMenuIcon{
+    display: flex;
+  }
+
+  .desktopMenu{
+    display: none;
+  }
+
+  .contactMeButton{
+    display: none;
+  }
+}
+
+.mobileMenuListItem{
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+  border-radius: 0.5rem;
+}
+
+
 
 /*
 * change colors of hover
@@ -44,6 +92,12 @@
   justify-content: center;
   padding: 0 1rem;
   border-radius: 2rem;
+}
+
+.desktopMenuBtn:hover{
+  cursor: pointer;
+  background: yellow;
+  color: black;
 }
 
 .desktopMenuImg {
