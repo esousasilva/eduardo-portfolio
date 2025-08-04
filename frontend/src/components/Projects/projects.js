@@ -40,11 +40,6 @@ const imgScheduleRx = [
   schedulerx6
 ]
 
-const imgExcision = [
-  excision1,
-  photo2
-]
-
 const imgWorkoutApp = [
   workout1,
   workout2,
