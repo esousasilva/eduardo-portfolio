@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import './contact.css';
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser';
 import { FaRegCircleCheck } from "react-icons/fa6";
 
 export const Contact = () => {
@@ -8,21 +8,50 @@ export const Contact = () => {
 
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
-      publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-    })
-    .then(
-      () => {
-        console.log('SUCCESS!');
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    try {
+      // Send data to your backend API
+      const response = await fetch('http://localhost:3100/api/contact/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // Show success message
         setFormSubmitted(true);
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
-      },
-    );
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        // Handle error response
+        console.error('Form submission failed');
+        // You might want to show an error message to the user
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Handle network errors
+    }
   };
 
   return (
@@ -40,9 +69,9 @@ export const Contact = () => {
           <span>
             <span className='contactDescription'>Please fill out the form below to discuss any work opportunities.</span>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
-              <input type='text' className='nameBoxForm' name='from_name' placeholder='Your Name'></input>
-              <input type='email' className='emailBoxForm' name='from_email' placeholder='Your Email'></input>
-              <textarea className="messageBoxForm" name='message' rows="7" placeholder='Your Message'></textarea>
+              <input type='text' className='nameBoxForm' name='name' placeholder='Your Name' value={formData.name} onChange={handleChange}></input>
+              <input type='email' className='emailBoxForm' name='email' placeholder='Your Email' value={formData.email} onChange={handleChange}></input>
+              <textarea className="messageBoxForm" name='message' rows="7" placeholder='Your Message' value={formData.message} onChange={handleChange}></textarea>
               <button type='submit' value="Send" className='submitBtn'>Submit</button>
             </form>
           </span>
