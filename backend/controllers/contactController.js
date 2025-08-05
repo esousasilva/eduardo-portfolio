@@ -4,7 +4,6 @@ exports.submitContactForm = async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    console.log(name + email + message);
     await mailgunService.sendEmail({ name, email, message });
     res.status(200).json({ success: true, message: 'Message sent successfully.' });
   } catch (error) {
