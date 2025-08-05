@@ -26,7 +26,7 @@ export const Contact = () => {
     e.preventDefault();
     try {
       // Send data to your backend API
-      const response = await fetch('http://localhost:3100/api/contact/', {
+      const response = await fetch('https://eduardo-portfolio-backend.onrender.com/api/contact/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
