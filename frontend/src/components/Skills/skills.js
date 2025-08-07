@@ -1,4 +1,3 @@
-import React from 'react';
 import './skills.css';
 import { FaPython, FaFigma, FaReact, FaDatabase, FaGithub} from "react-icons/fa";
 import { FaDartLang, FaFlutter} from "react-icons/fa6";
@@ -10,7 +9,9 @@ export const Skills = () => {
       <span className='skillTitle'>About Me</span>
       <span className='skillDescription'>I am a Software Engineer with a strong foundation in full-stack development, cloud deployment, and modern software architecture. Originally from Brazil, I began my journey in technology with a background in Medical Physics, later transitioning into software engineering to pursue my passion for building scalable, user-centered solutions.
         <br/><br/>In 2022 I relocated to the United States and earned a Master of Science in Computer Science with a specialization in Software Engineering from Seattle University. This experience sharpened both my technical and problem-solving skills, and deepened my commitment to continuous learning and innovation.
-        I have since developed and deployed web and mobile applications using technologies such as React, Node.js, Flutter and Firebase. I bring a user-first mindset, a collaborative work ethic, and a strong ability to adapt quickly in fast-paced environments. I’m particularly interested in roles that allow me to contribute to impactful products and grow as an engineer alongside a motivated and mission-driven team.
+        I have since developed and deployed web and mobile applications using technologies such as React, Node.js, Flutter and Firebase. I bring a user-first mindset, a collaborative work ethic, and a strong ability to adapt quickly in fast-paced environments. I am particularly interested in roles that allow me to contribute to impactful products and grow as an engineer alongside a motivated and mission-driven team.
+        <br/><br/>This portfolio website is an example of my work—designed and developed using React library for the frontend and Node.js for the backend. It features a custom-built RESTful API to handle contact form submissions, with Mailgun.js integrated for secure email delivery. 
+        The site is hosted on Render and configured with a custom domain. This project reflects my emphasis on clean design, modular architecture, and real-world functionality across both frontend and backend development. You can check out the source code <a href='https://github.com/esousasilva/eduardo-portfolio' target='_blank' rel='noopener noreferrer' className='link'>[here]</a>.
         <br/><br/>The following are some of the programming languages and frameworks with which I have worked:
       </span>
       <div className='skillBars'>
@@ -22,9 +23,9 @@ export const Skills = () => {
           </div>
           </div>
           <div className='skillBar'>
-            <FaDartLang className='skillBarLogo'/>
+            <IoLogoJavascript className='skillBarLogo'/>
             <div className='skillBarText'>
-              <h2>Dart</h2>
+              <h2>JavaScript</h2>
             </div>
           </div>
           <div className='skillBar'>
@@ -34,30 +35,30 @@ export const Skills = () => {
             </div>
           </div>
           <div className='skillBar'>
-            <FaDatabase className='skillBarLogo'/>
+            <FaFigma className='skillBarLogo'/>
             <div className='skillBarText'>
-              <h2>SQL</h2>
+              <h2>Figma</h2>
             </div>
           </div>
         </span>
 
         <span className='skillsBox'>
           <div className='skillBar'>
-          <IoLogoJavascript className='skillBarLogo'/>
+          <FaFlutter className='skillBarLogo'/>
           <div className='skillBarText'>
-            <h2>JavaScript</h2>
+            <h2>Flutter</h2>
           </div>
           </div>
           <div className='skillBar'>
-            <FaFigma className='skillBarLogo'/>
+            <FaDartLang className='skillBarLogo'/>
             <div className='skillBarText'>
-              <h2>Figma</h2>
+              <h2>Dart</h2>
             </div>
           </div>
           <div className='skillBar'>
-            <FaFlutter className='skillBarLogo'/>
+            <FaDatabase className='skillBarLogo'/>
             <div className='skillBarText'>
-              <h2>Flutter</h2>
+              <h2>SQL</h2>
             </div>
           </div>
           <div className='skillBar'>
