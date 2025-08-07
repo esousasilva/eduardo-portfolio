@@ -11,7 +11,7 @@ export const Intro = () => {
       <div className="introContent">
         <span className='hello'>Hello,</span>
         <span className='introText'>I'm <span className='myName'>Eduardo</span> <br/> Software Engineer  </span>
-        <p className='introParagraph'>Crafting modern web solutions with clean code, intuitive design,<br/> and a passion for technology.</p>
+        <p className='introParagraph'>Designing and implementing modern web solutions with <br/>React, Node.Js and RESTful architecture.</p>
         <span className='buttonsIntro'>
           <Link><button className='hireMeBtn' onClick={() => window.open('/Eduardo_s_resume.pdf', '_blank')}> <MdWork className='hireMeIcon'></MdWork><span className='hireMe'>Resume</span></button></Link>
           <Link><button className='hireMeBtn' onClick={() => window.open("https://www.linkedin.com/in/esousasilva/", '_blank')}> <FaLinkedin className='hireMeIcon'></FaLinkedin><span className='hireMe'>LinkedIn</span></button></Link>
